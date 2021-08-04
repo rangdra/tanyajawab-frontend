@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #f3f4f6 !important;
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom right, #0693e3ff, #9900efff);
+}
+
+.link-btn {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.card-post {
+  .post-left {
+    h2,
+    p {
+      margin: 0 !important;
+    }
+  }
+
+  .col-md-2 {
+    padding: 0 !important;
+  }
+  .col-md-10 {
+    padding-left: 0px !important;
+  }
+  .post-right {
+    .card-body {
+      padding: 0 !important;
+      p {
+        margin-bottom: 4px !important;
+      }
+    }
+  }
+  .card-footer {
+    margin: 0 -16px -16px;
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.detail-post {
+  display: flex;
+  align-items: center;
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  .left {
+    width: 70%;
+
+    &.comment {
+      .user-comment {
+        display: flex;
+        align-items: center;
+
+        .user-biodata {
+          p {
+            margin-bottom: 0 !important;
+            font-size: 14px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-item-login {
+    justify-content: center;
+  }
+
+  .all-question-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .login-form,
+  .register-form {
+    width: 50% !important;
+  }
+
+  .all-question-title {
+    font-size: 36px;
+  }
+
+  .create-post {
+    width: 75% !important;
+  }
+  .home {
+    flex-direction: row-reverse !important;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .login-form,
+  .register-form {
+    width: 25% !important;
+  }
+
+  .all-question-title {
+    font-size: 48px;
+  }
+}
